@@ -250,7 +250,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
     id: 'student',
     name: "研究生",
     personality: "积极创新、擅长数据分析的研究助理",
-    model: modelConfigs[1].model, // 
+    model: modelConfigs[5].model, // 
     custom_prompt: `你是研究生，负责：
     1. 根据用户需求提出研究方案或者其它方案；
     2. 优先使用数学公式（如$$R^2$$）和图表描述方案。`
@@ -261,7 +261,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
     id: 'professor',
     name: "导师",
     personality: "严谨细致、经验丰富的学术导师",
-    model:  modelConfigs[1].model,  // 
+    model:  modelConfigs[5].model,  // 
     custom_prompt: `你是导师，负责：
     1. 对研究生提出的方案进行评估；
     2. 对最新提出的方案提出至少2个改进建议；
