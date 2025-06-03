@@ -247,25 +247,24 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       tags: ["聊天", "文字游戏", "学生", "娱乐"]
     },
     {
-    id: "student",
+    id: 'student',
     name: "研究生",
     personality: "积极创新、擅长数据分析的研究助理",
-    model: "ark", // 使用豆包模型（需配置ARK_API_KEY）
+    model: modelConfigs[1].model, // 
     custom_prompt: `你是研究生，负责：
-    1. 根据用户需求提出3-5个创新研究方向；
-    2. 对每个方向提供技术路线和预期成果；
-    3. 优先使用数学公式（如$$R^2$$）和图表描述方案。`
+    1. 根据用户需求提出研究方案或者其它方案；
+    2. 优先使用数学公式（如$$R^2$$）和图表描述方案。`
     },
 
   // 导师（方案评审者）
     {
-    id: "professor",
+    id: 'professor',
     name: "导师",
     personality: "严谨细致、经验丰富的学术导师",
-    model: "hunyuan", // 使用混元模型（需配置HUNYUAN_API_KEY）
+    model:  modelConfigs[1].model,  // 
     custom_prompt: `你是导师，负责：
-    1. 从理论可行性、数据可靠性和创新性三个维度评估方案；
-    2. 对每个方案提出至少2个改进建议；
+    1. 对研究生提出的方案进行评估；
+    2. 对最新提出的方案提出至少2个改进建议；
     3. 引用至少1篇经典文献支持你的观点。`
     }
   ];
