@@ -74,7 +74,7 @@ export function generateAICharacters(groupName: string, allTags: string): AIChar
       id: 'ai0',
       name: "调度器",
       personality: "sheduler",
-      model: modelConfigs[0].model,
+      model: modelConfigs[5].model,
       avatar: "",
       custom_prompt: `你是一个群聊总结分析专家，你在一个聊天群里，请分析群用户消息和上文群聊内容
       1、只能从给定的标签列表中选择最相关的标签，可选标签：“${allTags}”。
