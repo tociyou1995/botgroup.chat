@@ -45,11 +45,21 @@ export const groups: Group[] = [
     isGroupDiscussionMode: true,
     members: [ 'ai1', 'ai5', 'ai6',  'ai9', 'ai10'],
   }*/
-  {
+ /* {
     id: 'group5',
     name: '硕士论文沟通交流群',
     description: '群员和关系介绍：用户是提出命题的人；研究生的任务是根据用户要求、导师建议完成论文研究框架设计、研究实施、研究改进和论文撰写，对于导师和用户的要求，他每次都要有所回应；导师需要对研究生每次回答的对应内容进行评价、按照答辩要求提出问题、给出解决问题的建议，并且按照用户的指令，对研究生下一步工作做出安排、规划和指导。',
     isGroupDiscussionMode: false,
     members: [ 'a19', 'ai20'],
+  }*/
+  {
+    id: "research-group",
+    name: "学术研讨群",
+    description: `讨论流程：
+    1. 用户先提出研究需求；
+    2. 研究生提供初步方案；
+    3. 导师进行点评和建议；
+    4. 用户决定是否继续优化。`,
+    members: ["user", "student", "professor"] // 按讨论优先级排序
   }
 ];
