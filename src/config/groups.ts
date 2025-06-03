@@ -61,6 +61,6 @@ export const groups: Group[] = [
     3. 导师进行点评和建议；
     4. 用户决定是否继续优化。`,
     isGroupDiscussionMode: false,
-    members: ["user", "student", "professor"] // 按讨论优先级排序
+    members: ['student', 'professor'] // 按讨论优先级排序
   }
 ];
